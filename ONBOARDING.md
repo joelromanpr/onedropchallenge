@@ -1,4 +1,4 @@
-
+*Disclaimer, the MAD score for Kotlin % also takes into account libraries, my implementation of the project is completly in Kotlin but some libraries used might not be.
 ![MAD Score](https://github.com/joelromanpr/onedropchallenge/blob/main/screenshots/summary.png)
 ### Architecture
 - This project follows the original instructions guidance of using MVP
