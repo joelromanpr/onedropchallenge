@@ -1,0 +1,32 @@
+package com.onedrop.androidchallenge.data.remote.impl.interceptors
+
+import android.annotation.SuppressLint
+import okhttp3.Interceptor
+import okhttp3.Response
+import timber.log.Timber
+import java.io.IOException
+
+
+/**
+ * A kotlin singleton object which intercepts all okhttp3 requests and logs them to [Timber].
+ */
+object LoggingInterceptor : Interceptor {
+    private val logger get() = Timber.tag("network")
+
+    @SuppressLint("DefaultLocale")
+    @Throws(IOException::class)
+    override fun intercept(chain: Interceptor.Chain): Response {
+        val request = chain.request()
+        val response = chain.proceed(request)
+
+        logger.v(
+            String.format(
+                "%s\t%s\t\t%d",
+                request.method,
+                request.url,
+                response.code
+            )
+        )
+        return response
+    }
+}

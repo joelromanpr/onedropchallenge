@@ -1,0 +1,13 @@
+include ':app'
+rootProject.name = "WeatherChallenge"
+
+include ':models:remote'
+include ':models:application'
+include ':utils:util-extensions'
+include ':data:data-remote'
+include ':data:data-remote-impl'
+include ':data:data-repo'
+include ':data:data-repo-impl'
+include ':app-shared'
+include ':features:feature-forecast'
+include ':features:feature-weather'
