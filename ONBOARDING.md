@@ -28,6 +28,7 @@
 - Following a repository pattern to abstract data layer from view layer
 - Location services was implemented using a 3rd party library in the interested of time
 - illustrations taken from open source website https://undraw.co
+- [screenshots](https://github.com/joelromanpr/onedropchallenge/tree/main/screenshots)
 
 ### Potential future work
 - Illustrate how to modularize for bigger scale, think of Square, their strategy consist of applying dependency inversion on modules themselves, so you have an api- -impl & impl-wiring module
