@@ -6,7 +6,7 @@
 - Coroutines are used to fetch information from the network, coroutines are the recommended and widely adopted API these days
 - One approach to modularization was applied to showcase a few things:
     - Modularization helps separating concerns across layers
-    - Improves build time first build is half the time vs no modularization, subsequent builds are even less thanks to caching of modules
+    - Improves build time, first build is half the time vs no modularization, subsequent builds are even less thanks to caching of modules
     - In this approach I broke it down in the following:
         - ```:app``` = The application
         - ```:app-shared``` = Anything shared across features, eg. Navigator
